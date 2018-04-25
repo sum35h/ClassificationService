@@ -51,6 +51,5 @@ if __name__ == '__main__':
 		print( 'All models loaded==============================================================')
 	except :
 		print ('Error: Model not found')
-      
-
-app.run()
+  
+	app.run()
