@@ -5,14 +5,16 @@ from sklearn.externals import joblib
 app=Flask(__name__)
 api=Api(app)
 
-model_dia=0
-global model_liver
-global model_bre
+
 
 model_directory = 'model'
 pkl_model_dia = '%s/model_dia.pkl' % model_directory
 pkl_model_liver= '%s/model_liver.pkl' % model_directory
 pkl_model_bre = '%s/model_bre.pkl' % model_directory
+
+model_dia= joblib.load(pkl_model_dia)
+model_liver= joblib.load(pkl_model_liver)
+model_bre= joblib.load(pkl_model_bre)
 
 @app.route('/home', methods=['GET'])
 def home():
