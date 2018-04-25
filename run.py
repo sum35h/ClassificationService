@@ -45,9 +45,9 @@ def predict_breast():
 
 if __name__ == '__main__':
 	try:
-		#model_dia= joblib.load(pkl_model_dia)
-		#model_liver= joblib.load(pkl_model_liver)
-		#model_bre= joblib.load(pkl_model_bre)
+		model_dia= joblib.load(pkl_model_dia)
+		model_liver= joblib.load(pkl_model_liver)
+		model_bre= joblib.load(pkl_model_bre)
 		print( 'All models loaded==============================================================')
 	except :
 		print ('Error: Model not found')
