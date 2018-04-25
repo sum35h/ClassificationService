@@ -5,7 +5,7 @@ from sklearn.externals import joblib
 app=Flask(__name__)
 api=Api(app)
 
-global model_dia
+model_dia=0
 global model_liver
 global model_bre
 
